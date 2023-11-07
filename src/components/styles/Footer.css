@@ -1,0 +1,29 @@
+.footer {
+	width: 100%;
+	position: relative;
+}
+.footer .down {
+	font-family: 'Work Sans', sans-serif;
+	background: #2d243f;
+	color: #98a5b5;
+	padding: .75em 13%;
+}
+.footer .down h6 {
+	font-size: .775em;
+	font-weight: 400;
+	line-height: 1.25;
+}
+.footer .down h5 {
+	font-size: .75em;
+	font-weight: 500;
+	margin-top: .15em;
+}
+
+@media screen and (max-width: 1195px) {
+	.footer .down {
+		padding: .75em 1em;
+	}
+	.footer .down h5 {
+		font-weight: 600;
+	}
+}

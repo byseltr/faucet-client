@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+.main {
+	width: 100%;
+	display: grid;
+	position: relative;
+}
+.main .container {
+	width: 100%;
+	padding: 0 13%;
+	position: relative;
+}
+.content-1 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2.25rem;
+	align-items: center;
+}
+.content-2 {
+	background: ; /*default: #e1dcea*/
+	margin-top: 1em;
+}
+@media screen and (max-width: 1195px) {
+	.content-1 {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
+@media screen and (max-width: 769px) {
+	.main {
+		/*EXP*/
+		margin-top: 2.8em;
+	}
+	.main .container {
+		padding: 1em 1em 0;
+	}
+	.content-2 {
+		padding: 0 1em;
+		/*EXP*/
+		margin-top: 0;
+	}
+}

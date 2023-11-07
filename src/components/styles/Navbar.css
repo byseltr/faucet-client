@@ -1,0 +1,30 @@
+nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background: #2d243f;
+	font-family: 'Work Sans', sans-serif;
+
+	padding: .9em 5%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+nav a {
+	text-decoration: none;
+	color: white;
+}
+nav .menu {
+	font-size: .95em;
+	font-weight: 500;
+}
+nav .menu:hover {
+	color: #9678d3;
+}
+@media screen and (max-width: 769px) {
+	nav {
+		padding: 1em;
+		/*EXP*/
+		top: 0;
+		position: fixed;
+		z-index: 10;
+	}
+}

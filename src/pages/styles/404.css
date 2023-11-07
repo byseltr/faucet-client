@@ -1,0 +1,14 @@
+.not-found {
+	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 1.25em;
+	font-weight: 600;
+	position: relative;
+	height: 100vh;
+	margin-top: 2.5em;
+	padding: 2em 0;
+	text-align: center;
+}
+.not-found .back {
+	font-size: .85em;
+}

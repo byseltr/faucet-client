@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+.support {
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	margin-top: 3em;
+}
+.support .s-wrap {
+	width: 100%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	align-items: center;
+	padding: 0 13%;
+}
+@media screen and (max-width: 1195px) {
+	.support {
+		margin-top: 3em;
+	}
+	.support .s-wrap {
+		padding: 1em;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+}
+/*==========================================*/
+.support .form {
+	width: 100%;
+	letter-spacing: .025em;
+	overflow: hidden;
+}
+.form .title {
+	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	background: linear-gradient(-50deg, #9678d3 -50%, #2d243f 100%);
+	color: white;
+	padding: .75em .75em .65em;
+	border-radius: 5px;
+	margin-bottom: .5em;
+}
+.form .title > h3 {
+	font-size: .95em;
+	font-weight: 600;
+}
+.form .content {
+	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	background: rgb(255, 255, 255);
+	background: white;
+	border-radius: 6px;
+	padding: .65em .75em .8em;
+}
+.form .content > p {
+	font-size: .825em;
+	font-weight: 500;
+	color: rgba(0, 0, 0, 0.75);
+}
+.form .content > input {
+	width: 100%;
+	outline: none;
+	background: #f4f2f8;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	padding: .75em;
+	border-radius: 5px;
+	border: 2px solid #d5cde4;
+	margin-top: 1em;
+	margin-bottom: .75em;
+}
+.form .content > textarea {
+	width: 100%;
+	resize: none;
+	outline: none;
+	overflow: auto;
+	background: #f4f2f8;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8em;
+	font-weight: 500;
+	padding: .85em .75em .75em;
+	border-radius: 5px;
+	border: 2px solid #d5cde4;
+	margin-bottom: .5em;
+}
+.form .content .note {
+	display: block;
+	font-size: .7em;
+	font-weight: 600;
+	line-height: 1.25;
+	color: rgba(0, 0, 0, 0.65);
+	margin-bottom: .5em;
+}
+.form .content .alert {
+	display: block;
+	font-size: .75em;
+	font-weight: 600;
+	color: indianred;
+	margin-bottom: .75em;
+}
+/*-----------------------------------------------*/
+.form .content .submit {
+	text-align: center;
+}
+.form .content .submit > button {
+	color: white;
+	background: #9678d3;
+	font-family: 'Work Sans', sans-serif;
+	font-size: .85em;
+	font-weight: 600;
+	letter-spacing: .075em;
+	padding: .7em 5.5em;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all .55s ease;
+}
+.form .submit > button:hover {
+	border: 1px solid transparent;
+	transform: translateY(-1.5px);
+}
+.form .content .submit .disable {
+	color: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.2);
+	cursor: not-allowed;
+}
+/*====================SUBMITED RESPONSE===================*/
+.form .response {
+	font-family: 'Work Sans', sans-serif;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	background: white;
+	border-radius: 6px;
+	padding: .75em .75em .65em;
+}
+.form .response > h4 {
+	font-size: .925em;
+	line-height: 1.3;
+	color: rgba(0, 0, 0, 0.75);
+	margin-bottom: .4em;
+}
+.form .response > h5 {
+	font-size: .8em;
+	font-weight: 500;
+	color: #17cf97;
+	margin-bottom: .35em;
+}
+.form .response > p {
+	font-size: .8em;
+	color: rgba(0, 0, 0, 0.7);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	margin-bottom: .75em;
+}
+.form .response > button {
+	color: white;
+	background: #9678d3;
+	font-family: 'Work Sans', sans-serif;
+	font-size: .8em;
+	font-weight: 600;
+	padding: .45em 1em .5em;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: all .55s ease;
+}
+.form .response > button:hover {
+	border: 1px solid transparent;
+	transform: translateY(-1px);
+}

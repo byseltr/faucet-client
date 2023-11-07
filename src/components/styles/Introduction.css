@@ -1,0 +1,120 @@
+.intro {
+	font-family: 'Work Sans', sans-serif;
+	margin-top: 3em;
+}
+.intro h4 {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: rgba(0, 0, 0, 0.75);
+}
+.intro h1 {
+	font-size: 56px;
+	font-weight: 800;
+	line-height: 1;
+	color: rgba(0, 0, 0, 0.8);
+	margin-bottom: 30px;
+}
+.intro p {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 10px;
+}
+.intro > a {
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: white;
+	background: #9678d3;
+	/* space */
+	padding: 8px 20px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	margin-right: 15px;
+	transition: all .55s ease;
+}
+.intro > a:hover {
+	color: #2d243f;
+	background: transparent;
+	border: 1px solid #2d243f;
+	transform: translateX(3px);
+}
+
+.intro .disable {
+	display: none;
+	color: #2d243f;
+	background: transparent;
+	border: 1px solid #2d243f;
+}
+@media screen and (max-width: 1195px) {
+	.intro {
+		margin-top: .5em;
+	}
+	.intro h4 {
+		font-size: 11px;
+	}
+	.intro h1 {
+		font-size: 42px;
+		margin-bottom: 25px;
+	}
+	.intro p {
+		font-size: 14px;
+		line-height: 1.25;
+	}
+}
+/*===== DRIPS =====*/
+.intro .drips {
+	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: .5em;
+	margin-top: 1em;
+}
+.drips .drip {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	background: linear-gradient(-50deg, #9678d3 -30%, #2d243f 100%);
+	border: 1px solid transparent;
+	border-radius: 6px;
+	padding: .5em 0.25em;
+	transition: all .55s ease;
+}
+.drips .drip img {
+	width: 50px;
+}
+.drips .drip h3 {
+	font-size: .95em;
+	font-weight: 500;
+	line-height: 1.3;
+	margin-bottom: .25em;
+}
+.drips .drip p {
+	color: white;
+	font-size: .7em;
+	font-weight: 400;
+	line-height: 1;
+}
+.drips .drip:hover {
+	border: 1px solid transparent;
+	transform: translateX(2px);
+}
+@media screen and (max-width: 1195px) {
+	.drips .drip {
+		padding-bottom: .2em;
+	}
+	.drips .drip img {
+		width: 2.75em;
+	}
+	.drips .drip h3 {
+		font-size: .875em;
+	}
+	.drips .drip p {
+		font-size: .6em;
+	}
+}

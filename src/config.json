@@ -1,0 +1,34 @@
+{
+	"NODE_ENV": "development",
+	"API": {
+		"endpointProduction": "https://api.byseltr.xyz/",
+		"endpointDevelopment": "http://localhost:5005/",
+		"timeout": 40000
+	},
+	"CHAINS": [
+		{
+			"ID": "MUMBAI",
+			"URL": "/mumbai",
+			"NAME": "Polygon Mumbai",
+			"TOKEN": "MATIC",
+			"LOGO": "svg/mumbai.svg",
+			"EXPLORER": "https://mumbai.polygonscan.com/tx/"
+		},
+		{
+			"ID": "ATHENS",
+			"URL": "/athens",
+			"NAME": "Zetachain Athens3",
+			"TOKEN": "ZETA",
+			"LOGO": "svg/athens.svg",
+			"EXPLORER": "https://explorer.zetachain.com/evm/tx/"
+		},
+		{
+			"ID": "FUJI",
+			"URL": "/fuji",
+			"NAME": "Avalanche Fuji",
+			"TOKEN": "AVAX",
+			"LOGO": "svg/holesky.svg",
+			"EXPLORER": "https://testnet.snowtrace.io/tx/"
+		}
+	]
+}
