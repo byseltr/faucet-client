@@ -27,7 +27,7 @@ const Premium = () => {
 				</div>
 
 				<div className="p-price">
-					<h3>Under Maintenance</h3>
+					<h3>Page Under Maintenance</h3>
 				</div>
 			</div>
 			

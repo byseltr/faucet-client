@@ -36,22 +36,28 @@ const TxHistory = () => {
 
 	const Tx = (prop) => {
 		const tx = prop.tx
+		const addr = tx.address
+		const address = [addr.slice(0,4),'...',addr.slice(addr.length-4)].join('')
+		const hash = tx.hash
+		const url = tx.explorer+hash
+		const chain = chainIS(tx.chain)
+		const time = timeAgo(tx.time)
 
 		return (
 		<div className="tx">
 			<p className="tx-title">
-				<strong>0xdf...7hdf</strong>
+				<strong>{address}</strong>
 				request has successful
 			</p>
 			<p className="tx-body">
 				<strong>Tx hash:</strong>
-				<a href={tx.explorer + tx.hash} target="_noblank">
-					{tx.hash}
+				<a href={url} target="_noblank">
+					{hash}
 				</a>
 			</p>
 			<p className="tx-info">
-				<strong>on {chainIS(tx.chain)}</strong>
-				<span>{timeAgo(tx.time)}</span>
+				<strong>on {chain}</strong>
+				<span>{time}</span>
 			</p>
 		</div>
 		)
@@ -118,7 +124,7 @@ const timeAgo = (timestamp) => {
 
 const chainIS = (chain) => {
 	if (chain === 'MUMBAI') return 'Polygon Mumbai'
-	else if (chain === 'FUJI') return 'Avalance Fuji'
+	else if (chain === 'FUJI') return 'Avalanche Fuji'
 	else if (chain === 'ATHENS') return 'Zetachain Athens 3'
 	else if (chain === 'HOLESKY') return 'Ethereum Holesky'
 	else return 'Unknown Chain'

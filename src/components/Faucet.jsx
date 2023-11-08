@@ -17,7 +17,7 @@ const Faucet = (props) => {
 		txHash: null,
 	})
 
-	let textTweet = `request testnet $${props.chain.TOKEN} tokens from @byseltr faucet on ${props.chain.NAME} Drip. #byseltr #testnet-faucet #testnet`
+	let textTweet = `request testnet $${props.chain.TOKEN} tokens from @byseltr faucet on ${props.chain.NAME} Drip. #byseltr #testnet-faucet #testnet ${props.chain.TAG}`
 
 	useEffect(() => {
 		const status = async () => {
@@ -72,7 +72,6 @@ const Faucet = (props) => {
 		}
 	}
 
-	// NOT FIX
 	async function sendDrip() {
 		if(!allowSend) {
 			return
@@ -159,7 +158,7 @@ const Faucet = (props) => {
 						{textTweet}
 					</div>
 					<a
-						href={'https://twitter.com/intent/tweet?text=' + textTweet}
+						href={'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textTweet)}
 						target="_noblank">
 						<i className="fa-brands fa-x-twitter"></i>
 						Post a Tweet
@@ -188,7 +187,7 @@ const Faucet = (props) => {
 				</div>
 
 				{/*==================================================*/}
-				<span className="note">note: funds that you receive throught this faucet are not real funds. it's just used to testing.
+				<span className="note">note: funds that you receive throught this faucet are not real funds. it's just used for testing.
 				</span>
 
 				{
@@ -206,7 +205,6 @@ const Faucet = (props) => {
 				</div>
 			</div>
 
-			{/* SEND DRIP RESPONSE */}
 			<div
 				className="drip-response"
 				style={{

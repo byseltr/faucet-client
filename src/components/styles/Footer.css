@@ -11,12 +11,12 @@
 .footer .down h6 {
 	font-size: .775em;
 	font-weight: 400;
-	line-height: 1.25;
+	line-height: 1.4;
 }
 .footer .down h5 {
 	font-size: .75em;
 	font-weight: 500;
-	margin-top: .15em;
+	margin-top: .175em;
 }
 
 @media screen and (max-width: 1195px) {

@@ -1,1 +1,1 @@
-#Testnet Faucet for Smart Contract or DAPP Development.
+#Testnet faucet for smart contract or dapp development.

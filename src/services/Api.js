@@ -10,15 +10,13 @@ export default axios.create({
 
 axios.interceptors.response.use((response) => {
 	if (response.data) {
-		//return success
 		if (response.status === 200) {
 			return response
 		}
-		//reject erorrs & warning
+		
 		return Promise.reject(response)
 	}
 
-	//default fallback
 	return Promise.reject(response)
 }, (error) => {return Promise.reject(error)})
 

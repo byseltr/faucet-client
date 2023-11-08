@@ -11,24 +11,30 @@
 			"URL": "/mumbai",
 			"NAME": "Polygon Mumbai",
 			"TOKEN": "MATIC",
+			"AMOUNT": "0.5",
 			"LOGO": "svg/mumbai.svg",
-			"EXPLORER": "https://mumbai.polygonscan.com/tx/"
+			"EXPLORER": "https://mumbai.polygonscan.com/tx/",
+			"TAG": "#mumbai #matic"
 		},
 		{
 			"ID": "ATHENS",
 			"URL": "/athens",
 			"NAME": "Zetachain Athens3",
 			"TOKEN": "ZETA",
+			"AMOUNT": "0.5",
 			"LOGO": "svg/athens.svg",
-			"EXPLORER": "https://explorer.zetachain.com/evm/tx/"
+			"EXPLORER": "https://explorer.zetachain.com/evm/tx/",
+			"TAG": "#athens #zeta"
 		},
 		{
 			"ID": "FUJI",
 			"URL": "/fuji",
 			"NAME": "Avalanche Fuji",
 			"TOKEN": "AVAX",
+			"AMOUNT": "0.25",
 			"LOGO": "svg/holesky.svg",
-			"EXPLORER": "https://testnet.snowtrace.io/tx/"
+			"EXPLORER": "https://testnet.snowtrace.io/tx/",
+			"TAG": "#fuji #avax"
 		}
 	]
 }

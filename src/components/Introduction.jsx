@@ -1,8 +1,7 @@
-// import { useState, useEffect } from 'react'
 import './styles/Introduction.css'
 
 const Introduction = (props) => {
-	const telegramBOT = 'https://t.me/byseltr_faucet'
+	const telegramBOT = 'https://t.me/byseltr_faucet_bot'
 
 	const drips = (data) => (
 		<a
@@ -15,7 +14,7 @@ const Introduction = (props) => {
 				width="50"
 			/>
 			<h3>{data.NAME}</h3>
-			<p>DRIP 0.1 {data.TOKEN}</p>
+			<p>DRIP {data.AMOUNT} {data.TOKEN}</p>
 		</a>
 	)
 

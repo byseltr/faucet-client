@@ -50,13 +50,13 @@
 .tx .tx-title {
 	font-size: .875em;
 	line-height: 1.25;
-	text-transform: lowercase;
 	color: rgba(0, 0, 0, 0.6);
 	margin: 0;
 	margin-bottom: .3em;
 }
 .tx .tx-title strong {
 	color: rgba(0, 0, 0, 0.7);
+	text-transform: lowercase;
 	margin-right: .5em;
 }
 .tx .tx-body {
