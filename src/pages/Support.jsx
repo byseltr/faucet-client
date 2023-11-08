@@ -64,15 +64,15 @@ const Support = () => {
 
 			<div className="support">
 				<div className="s-wrap">
-					<div className="form"
-						style={{
-							display: submitedResponse?.message ? 'none' : 'block'
-						}}>
+					<div className="form">
 						<div className="title">
 							<h3>Submit a ticket</h3>
 						</div>
 
-						<div className="content">
+						<div className="content"
+							style={{
+								display: submitedResponse?.message ? 'none' : 'block'
+							}}>
 							<p>Describe your issue by filling up this form</p>
 							<input
 								placeholder="Email"
@@ -105,16 +105,16 @@ const Support = () => {
 							</div>
 						</div>
 
-					{/* SUBMITED RESPONSE */}
-					<div className="response"
-						style={{
-							display: submitedResponse?.message ? 'block' : 'none'
-						}}>
-						<h4>Submited Result</h4>
-						<h5>{submitedResponse?.message}</h5>
-						<p>TID: qwertyuiopasdfghjklzxcvbnm</p>
-						<button onClick={back}>BACK</button>
-					</div>
+						{/* SUBMITED RESPONSE */}
+						<div className="response"
+							style={{
+								display: submitedResponse?.message ? 'block' : 'none'
+							}}>
+							<h4>Submited Result</h4>
+							<h5>{submitedResponse?.message}</h5>
+							<p>TID: qwertyuiopasdfghjklzxcvbnm</p>
+							<button onClick={back}>BACK</button>
+						</div>
 					</div>
 
 					{/*content 1 column 2*/}
